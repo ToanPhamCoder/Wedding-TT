@@ -12,12 +12,11 @@ const WeddingEvent = ({ title, time, location, image, id }) => {
 
   // Open location in Google Maps
   const openGoogleMaps = () => {
-    const encodedAddress = encodeURIComponent(location);
-    if (id === 1) {
+      if (id === 1) {
       const mapUrl = "https://maps.app.goo.gl/2rRXoJnDeiZXFZ17A";
       window.open(mapUrl, "_blank");
     } else {
-      const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+      const mapUrl = "https://maps.app.goo.gl/qw7eFSx6bBNC42UG6";
       window.open(mapUrl, "_blank");
     }
   };
