@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const { nextui } = require("@nextui-org/theme");
+import { nextui } from "@nextui-org/theme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -27,7 +27,7 @@ export default {
           colors: {
             background: "#202124", // or DEFAULT
           },
-        },  
+        },
       },
     }),
   ],
