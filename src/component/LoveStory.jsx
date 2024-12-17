@@ -133,7 +133,7 @@ const LoveStory = () => {
         content="Ngày tụi mình lên Đà Lạt đển chụp hình cưới . Bước vào quán thảo thấy  bàn cầu hôn , bàn sinh nhật với không khí giáng sinh siêu yêu luôn . Anh thì cứ luôn miệng xin lỗi vì không thực hiện cho mình .Hôm đó mình bệnh và khá mệt . Nên không có suy nghĩ gì nhiều. Một lúc sau , mình nghe tiếng nhạc quen thuộc “ Ngày đầu tiên “ .. Mình có nhìn sang bàn bên cạnh , cứ nghĩ là 2 anh chị kế bên thôi . Nhưng thấy anh bước ra và ôm theo 1 boá hoa ….và thế cô gái nhỏ bé lại phải khóc sướt mướt với câu nói “ Thảo , đồng ý lấy anh nha “....Và mình là cô gái hạnh phúc nhất  ngày hôm đó ^^"
         type="right"
         image={
-          "https://res.cloudinary.com/dpohykmqq/image/upload/v1734409354/Ca%CC%82%CC%80u_ho%CC%82n_tqgmqt.jpg"
+          "https://res.cloudinary.com/dpohykmqq/image/upload/v1734450307/z6140366065721_cbf49df049d94db75eb27fce0be59e92_bkkuwq.jpg"
         }
         titleSmall={
           "Thảo tin rằng, mọi cô gái đều xứng đáng có một lời tỏ tình , một lời cầu hôn ngọt ngào, để ghi dấu kỷ niệm đẹp nhất đời mình. 💖"
