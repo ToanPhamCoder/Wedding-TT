@@ -25,3 +25,31 @@ const TitleComponent = () => {
 };
 
 export default TitleComponent;
+{
+  /* <div className="flex pl-[100px] items-center text-center ">
+<p
+  className="  text-[#3d3d3d] absolute bottom-[60%] font-roboto text-lg"
+  style={{ left: "calc(100% - 390px)" }}
+>
+  Chúng tôi
+</p>
+<div className="mx-2 ">
+  <p className="text-[80px] font-bold m-0 font-bellota  text-[#dcbdc5] leading-none border-b-[#dcbdc5] border-b-small">
+    28
+  </p>
+  <p className="text-[80px] font-bold m-0 font-bellota  text-[#dcbdc5] leading-none ">
+    12
+  </p>
+</div>
+<div className=" text-[80px] text-[#dcbdc5]">-</div>
+<div className="mx-2 ">
+  <p className="text-[80px] font-bold m-0 font-bellota  text-[#dcbdc5] leading-none border-b-[#dcbdc5] border-b-small">
+    29
+  </p>
+  <p className="text-[80px] font-bold m-0 font-bellota  text-[#dcbdc5] leading-none ">
+    12
+  </p>
+</div>
+<p className=" text-lg  mt-1  0 font-roboto">Sắp kết hôn.</p>
+</div> */
+}

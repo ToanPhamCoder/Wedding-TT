@@ -10,11 +10,11 @@ const Modal = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     // Build the Google Form prefilled URL with the name, attendance, and message
-    const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSf44tHZAXBKdp928_6GngBjpD9p3c4S9dkiM1sYnbKfGzENCA/formResponse?&submit=Submit?usp=pp_url&entry.559352220=${encodeURIComponent(
+    const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdGacbzN5MtKjX4g05OCxw-JAYvFw6Kgx8c5JczUccx4YUq9Q/formResponse?&submit=Submit?usp=pp_url&entry.91355384=${encodeURIComponent(
       name
-    )}&entry.877086558=${encodeURIComponent(
+    )}&entry.87332576=${encodeURIComponent(
       attendance
-    )}&entry.1751303409=${encodeURIComponent(message)}`;
+    )}&entry.153554874=${encodeURIComponent(message)}`;
 
     // Redirect the user to the prefilled Google Form URL
     window.open(formUrl, "_blank");

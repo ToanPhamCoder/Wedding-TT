@@ -16,6 +16,7 @@ const LoiNgo = lazy(() => import("./LoiNgo"));
 const WeddingEvents = lazy(() => import("./WeddingEvents"));
 const BrideGroomSection = lazy(() => import("./BrideGroomSection"));
 const ThankYouSection = lazy(() => import("./ThankYouSection"));
+const ModalForm = lazy(() => import("./ModalForm"));
 
 const Main = () => {
   const createHeart = () => {
@@ -44,12 +45,12 @@ const Main = () => {
     <main id="heart-container" className="flex justify-center bg-[#cccccc]">
       <div className="w-[430px]">
         <div className="bg-white p-2">
-        <Suspense fallback={<LoadingSpinner />}> 
-        <TitleComponent />
+          <Suspense fallback={<LoadingSpinner />}>
+            <TitleComponent />
             <SliderComponent />
             <SendMessage />
             <Album />
-          <WeddingGallery  />
+            <WeddingGallery />
 
             <CountdownComponent />
             <Thanks />
@@ -57,12 +58,11 @@ const Main = () => {
             <LoiNgo />
             <WeddingEvents />
             <BrideGroomSection />
+            <ModalForm />
             <ThankYouSection />
           </Suspense>
-          <MusicPlayer/>
-
+          <MusicPlayer />
         </div>
-        
       </div>
     </main>
   );

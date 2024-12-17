@@ -1,6 +1,7 @@
 import React, { useEffect, lazy, Suspense, useState } from "react";
 import LoadingSpinner from "@/component/LoadingSpinner";
 import MusicPlayer from "@/component/MusicPlayer";
+import ModalForm from "@/component/ModalForm";
 
 // Lazy load each component
 const SliderComponent = lazy(() => import("@/component/SliderComponents"));
@@ -78,10 +79,14 @@ const Main = () => {
             <LoveStory />
             <LoiNgo />
             <WeddingEvents />
-            <BrideGroomSection />
+            <div className="text-center text-[#D98EA1] font-sans text-2xl mt-2">
+              {" "}
+              Lời chúc của bạn
+            </div>
+            <ModalForm />
+
             <ThankYouSection />
             <MusicPlayer />
-
           </Suspense>
         </div>
       </div>

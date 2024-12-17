@@ -14,7 +14,7 @@ const WeddingEvent = ({ title, time, location, image, id }) => {
   const openGoogleMaps = () => {
     const encodedAddress = encodeURIComponent(location);
     if (id === 1) {
-      const mapUrl = "https://maps.app.goo.gl/nHEtHEh477Wp7yBe9";
+      const mapUrl = "https://maps.app.goo.gl/2rRXoJnDeiZXFZ17A";
       window.open(mapUrl, "_blank");
     } else {
       const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
@@ -41,7 +41,11 @@ const WeddingEvent = ({ title, time, location, image, id }) => {
   return (
     <div className="bg-white shadow-lg rounded-md p-4 mb-6 flex items-center space-x-4">
       {/* Event Image */}
-      <img src={image} alt={title} className="w-36 object-cover rounded-md" />
+      <img
+        src={image}
+        alt={title}
+        className="w-36 object-contain  rounded-md"
+      />
 
       {/* Event Details */}
       <div>
@@ -83,23 +87,24 @@ const WeddingEvents = () => {
       id: 1,
       title: "TIỆC CƯỚI NHÀ NỮ",
       time: {
-        morning: "Sáng: 10:00 - Chiều 16:00",
-        date: "Ngày 30/11/2024",
+        morning: "Chiều 17g00",
+        date: "Ngày 28/12/2024",
       },
-      location: "Số 07 Đường D4, Khu phố 3, Phường 1, TX Kiến Tường, Long An",
+      location:
+        "Ấp bình hoà tây 1, xã bình hoà tây, huyện mộc hoá. Tỉnh Long An",
       image:
-        "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729759646/1DC02498_fft5ga.jpg",
+        "https://res.cloudinary.com/dpohykmqq/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1734414158/VIEN7746_nnozk1.jpg",
     },
     {
       id: 2,
       title: "TIỆC CƯỚI NHÀ NAM",
       time: {
-        morning: "Chiều 17:30",
-        date: "Ngày 01-12-2024",
+        morning: "Chiều 17:00",
+        date: "Ngày 29-12-2024",
       },
-      location: "793/57/16 Trần Xuân Xoạn,P. Tân Hưng, Q.7, TP.HCM",
+      location: "Số nhà 233, ấp ông nhan tây, xã bình hiệp. thị xã kiến tường ",
       image:
-        "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729780038/1DC01685_itetou.jpg",
+        "https://res.cloudinary.com/dpohykmqq/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1734414137/VIEN8547_nwyf9b.jpg",
     },
   ];
 

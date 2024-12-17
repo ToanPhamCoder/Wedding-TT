@@ -216,7 +216,7 @@ body {
 .react-calendar__tile--rangeBothEnds abbr {
   color: #fff;
   background: #dcbdc5 !important; /* Màu sắc chữ */
-  padding: 8px 15px;
+  padding: 8px 8px;
   border-radius: 100%;
 }
 .react-calendar__tile:disabled {

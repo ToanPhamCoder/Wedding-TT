@@ -12,6 +12,7 @@ const CardStory = ({
   variants,
   transition,
   image,
+  titleSmall,
 }) => {
   return (
     <motion.div
@@ -49,6 +50,7 @@ const CardStory = ({
           <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
           <p className="text-gray-600 text-sm">{content}</p>
           <img src={image} alt="Chat Image" className="rounded-lg mt-4" />
+          <h4 className="text-[#D98EA1] text-md mb-1 pt-4">{titleSmall}</h4>
         </div>
       </div>
     </motion.div>

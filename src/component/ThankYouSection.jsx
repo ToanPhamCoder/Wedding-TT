@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ThankYouSection = () => {
   return (
@@ -6,11 +6,9 @@ const ThankYouSection = () => {
       <div className="container mx-auto text-center">
         {/* Thank you message */}
         <h2 className="text-4xl font-semibold mb-4">Thank you!</h2>
-        
+
         {/* Names */}
-        <p className="text-xl text-gray-600">
-          -- Hồng Toàn & Hưng Bình --
-        </p>
+        <p className="text-xl text-gray-600">-- Quốc Vinh & Thu Thảo --</p>
       </div>
     </div>
   );
