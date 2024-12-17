@@ -7,7 +7,7 @@ const Thanks = () => {
       <h1 className="text-4xl font-bold text-gray-700 mb-4">Thank you!</h1>
       {/* Divider and names */}
       <p className="text-lg font-light text-gray-500">
-        -- Hồng Toàn & Hưng Bình --
+        -- Quốc Vinh & Thu Thảo --
       </p>
     </div>
   );

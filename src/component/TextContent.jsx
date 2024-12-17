@@ -46,7 +46,7 @@ const TextContent = () => {
         variants={textVariants}
         transition={{ duration: 0.5 }}
       >
-        Hồng Toàn & Hưng Bình
+        Quốc Vinh & Thu Thảo
       </motion.p>
     </div>
   );

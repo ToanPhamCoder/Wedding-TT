@@ -8,27 +8,65 @@ const WeddingGallery = () => {
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
   const images = [
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729843557/1DC04847-min_ehb4b1.jpg",
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729780050/1DC04505_lpal9a.jpg",
-
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729843546/1DC04750-min_s5mqil.jpg",
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729843550/1DC04770-min_xy1r7k.jpg",
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729843540/1DC04648-min_sq3fwm.jpg",
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729843550/1DC04823-min_whrcil.jpg",
-
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729866674/1DC04104-min_ztakoc.jpg",
-    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1729866700/1DC04008-min_sog8an.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414158/VIEN7746_nnozk1.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414146/VIEN7500_h44wtr.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414144/VIEN8715_bpayie.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414139/VIEN8219_l5flv5.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414137/VIEN8547_nwyf9b.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414132/VIEN7525_pjjmnh.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414129/VIEN7723_natgwu.jpg",
+    "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1734414146/VIEN7500_h44wtr.jpg",
   ];
 
   const thumbnails = [
-    { src: images[0], cols: "col-span-2", rows: "row-span-2", position: "left" },
-    { src: images[1], cols: "col-span-1", rows: "row-span-1", position: "right" },
-    { src: images[2], cols: "col-span-1", rows: "row-span-1", position: "right" },
-    { src: images[3], cols: "col-span-1", rows: "row-span-1", position: "right" },
-    { src: images[4], cols: "col-span-1", rows: "row-span-1", position: "right" },
-    { src: images[5], cols: "col-span-1", rows: "row-span-1", position: "left" },
-    { src: images[6], cols: "col-span-1", rows: "row-span-1", position: "left" },
-    { src: images[7], cols: "col-span-2", rows: "row-span-1", position: "right" },
+    {
+      src: images[0],
+      cols: "col-span-2",
+      rows: "row-span-2",
+      position: "left",
+    },
+    {
+      src: images[1],
+      cols: "col-span-1",
+      rows: "row-span-1",
+      position: "right",
+    },
+    {
+      src: images[2],
+      cols: "col-span-1",
+      rows: "row-span-1",
+      position: "right",
+    },
+    {
+      src: images[3],
+      cols: "col-span-1",
+      rows: "row-span-1",
+      position: "right",
+    },
+    {
+      src: images[4],
+      cols: "col-span-1",
+      rows: "row-span-1",
+      position: "right",
+    },
+    {
+      src: images[5],
+      cols: "col-span-1",
+      rows: "row-span-1",
+      position: "left",
+    },
+    {
+      src: images[6],
+      cols: "col-span-1",
+      rows: "row-span-1",
+      position: "left",
+    },
+    {
+      src: images[7],
+      cols: "col-span-2",
+      rows: "row-span-1",
+      position: "right",
+    },
   ];
 
   const nextImage = () => {
@@ -36,14 +74,16 @@ const WeddingGallery = () => {
   };
 
   const prevImage = () => {
-    setPhotoIndex((prevIndex) => (prevIndex + images.length - 1) % images.length);
+    setPhotoIndex(
+      (prevIndex) => (prevIndex + images.length - 1) % images.length
+    );
   };
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
-      if (scrollTop > 360 ) {
+      if (scrollTop > 360) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -70,7 +110,9 @@ const WeddingGallery = () => {
         {thumbnails.map((image, index) => (
           <div
             key={index}
-            className={`${image.cols} ${image.rows} overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-105 ${getAnimationClass(
+            className={`${image.cols} ${
+              image.rows
+            } overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-105 ${getAnimationClass(
               image.position
             )}`}
             onClick={() => {
@@ -125,7 +167,9 @@ const WeddingGallery = () => {
                   key={index}
                   onClick={() => setPhotoIndex(index)}
                   className={`flex-none h-full cursor-pointer transition-opacity duration-300 hover:opacity-100 ${
-                    index === photoIndex ? "opacity-100 ring-2 ring-white" : "opacity-50"
+                    index === photoIndex
+                      ? "opacity-100 ring-2 ring-white"
+                      : "opacity-50"
                   }`}
                 >
                   <img

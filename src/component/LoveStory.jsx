@@ -77,11 +77,11 @@ const LoveStory = () => {
         variants={buttonVariants}
         transition={{ duration: isVisible1 ? 0.8 : 0.2 }}
         date={"02 / 06 / 2020"}
-        title="Món đầu tiên em nấu cho ăn "
-        content="Mình- Hồng Toàn, lần đầu tiên trong đời được ăn món sương sáo ngon như vậy. Sau đó là những bữa cơm ăn chung với nhau khi còn là sinh viên chung khu trọ. Em thì chăm nấu còn mình rất thích đồ ăn cô ấy nấu."
+        title="Câu Chuyện Cổ Tích của Tụi Mình"
+        content="Và Tụi Mình Yêu Nhau từ 3.08.2018 ( tn đầu tiên ) Hai cô cậu cấp 2 >< , còn thích lướt Facebook , Mình biết anh qua 1 bài rap khá ấn tượng trên Face  . Đến 1 hôm ảnh  đăng Like IB  . Thế là đã có Tin nhắn nàyyy . Đúng là con ních quỹ , 2 đứa đã quen nhau trong hôm đó  và đến nay đã là 7 năm rồi ^^  ."
         type="left"
         image={
-          "https://res.cloudinary.com/dpohykmqq/image/upload/h_1080/c_fit/v1730295525/IMG_4673_iadthu.jpg"
+          "https://res.cloudinary.com/dpohykmqq/image/upload/v1734409357/a%CC%89nh_tn_%C4%91a%CC%82%CC%80u_tie%CC%82n_rehx9h.jpg"
         }
       />
 

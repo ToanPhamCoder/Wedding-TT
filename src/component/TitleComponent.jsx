@@ -12,7 +12,7 @@ const TitleComponent = () => {
         </p>
         <div className="mx-2 ">
           <p className="text-[80px] font-bold m-0 font-bellota  text-[#dcbdc5] leading-none border-b-[#dcbdc5] border-b-small">
-            01
+            28
           </p>
           <p className="text-[80px] font-bold m-0 font-bellota  text-[#dcbdc5] leading-none ">
             12

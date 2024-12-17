@@ -3,7 +3,7 @@ import Calendar from "react-calendar"; // You need to install `react-calendar` f
 import "react-calendar/dist/Calendar.css"; // Include calendar styles
 
 const CountdownComponent = () => {
-  const targetDate = new Date("2024-12-01T00:00:00");
+  const targetDate = new Date("2024-12-28T00:00:00");
   const [timeRemaining, setTimeRemaining] = useState({
     days: 0,
     hours: 0,
@@ -42,7 +42,7 @@ const CountdownComponent = () => {
       </h2>
       <div className="flex justify-center w-full px-8">
         <Calendar
-          value={new Date(2024, 11, 1)} // December 1st, 2024
+          value={new Date(2024, 11, 28)} // December 28, 2024
           locale="vi-VN" // Vietnamese locale
           className="w-full rounded-lg border" // Add border-radius with Tailwind
           tileDisabled={() => true} // Disable interaction with all day tiles
